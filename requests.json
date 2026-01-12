@@ -1,0 +1,183 @@
+Schools
+
+{
+    "_id": ObjectId("65f000000000000000000001"),
+    "name": "Lycée Moderne de Bamako",
+    "address": "Hamdallaye ACI 2000",
+    "director": "M. Diarra"
+}
+
+
+Classes
+
+[
+    {
+        "_id": ObjectId("65f000000000000000000101"),
+        "name": "3ème A",
+        "level": "Troisième",
+        "schoolId": ObjectId("65f000000000000000000001")
+    },
+    {
+        "_id": ObjectId("65f000000000000000000102"),
+        "name": "4ème B",
+        "level": "Quatrième",
+        "schoolId": ObjectId("65f000000000000000000001")
+    },
+    {
+        "_id": ObjectId("65f000000000000000000103"),
+        "name": "Terminale S",
+        "level": "Terminale",
+        "schoolId": ObjectId("65f000000000000000000001")
+    }
+]
+
+Subjects
+[
+    {
+        "_id": ObjectId("65f000000000000000000201"),
+        "name": "Mathématiques",
+        "coefficient": 5
+    },
+    {
+        "_id": ObjectId("65f000000000000000000202"),
+        "name": "Physique",
+        "coefficient": 4
+    },
+    {
+        "_id": ObjectId("65f000000000000000000203"),
+        "name": "SVT",
+        "coefficient": 3
+    },
+    {
+        "_id": ObjectId("65f000000000000000000204"),
+        "name": "Français",
+        "coefficient": 3
+    },
+    {
+        "_id": ObjectId("65f000000000000000000205"),
+        "name": "Histoire-Géo",
+        "coefficient": 2
+    }
+]
+
+Teachers
+
+[
+    {
+        "_id": ObjectId("65f000000000000000000301"),
+        "firstName": "Abdoulaye",
+        "lastName": "Traoré",
+        "speciality": "Mathématiques",
+        "subjects": [
+            ObjectId("65f000000000000000000201"),
+            ObjectId("65f000000000000000000202")
+        ]
+    },
+    {
+        "_id": ObjectId("65f000000000000000000302"),
+        "firstName": "Fatou",
+        "lastName": "Diallo",
+        "speciality": "Lettres",
+        "subjects": [
+            ObjectId("65f000000000000000000204")
+        ]
+    },
+    {
+        "_id": ObjectId("65f000000000000000000303"),
+        "firstName": "Moussa",
+        "lastName": "Coulibaly",
+        "speciality": "Sciences",
+        "subjects": [
+            ObjectId("65f000000000000000000202"),
+            ObjectId("65f000000000000000000203")
+        ]
+    }
+]
+
+Students
+[
+    {
+        "_id": ObjectId("65f000000000000000000401"),
+        "firstName": "Aminata",
+        "lastName": "Koné",
+        "birthDate": "2009-03-15",
+        "classId": ObjectId("65f000000000000000000101"),
+        "subjects": [
+            ObjectId("65f000000000000000000201"),
+            ObjectId("65f000000000000000000204")
+        ],
+        "grades": [
+            {
+                "subjectId": ObjectId("65f000000000000000000201"),
+                "score": 16
+            },
+            {
+                "subjectId": ObjectId("65f000000000000000000204"),
+                "score": 14
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("65f000000000000000000402"),
+        "firstName": "Oumar",
+        "lastName": "Sissoko",
+        "birthDate": "2008-11-02",
+        "classId": ObjectId("65f000000000000000000101"),
+        "subjects": [
+            ObjectId("65f000000000000000000201"),
+            ObjectId("65f000000000000000000205")
+        ],
+        "grades": [
+            {
+                "subjectId": ObjectId("65f000000000000000000201"),
+                "score": 12
+            },
+            {
+                "subjectId": ObjectId("65f000000000000000000205"),
+                "score": 15
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("65f000000000000000000403"),
+        "firstName": "Ibrahim",
+        "lastName": "Coulibaly",
+        "birthDate": "2008-03-15",
+        "classId": ObjectId("65f000000000000000000101"),
+        "subjects": [
+            ObjectId("65f000000000000000000201"),
+            ObjectId("65f000000000000000000204")
+        ],
+        "grades": [
+            {
+                "subjectId": ObjectId("65f000000000000000000201"),
+                "score": 16
+            },
+            {
+                "subjectId": ObjectId("65f000000000000000000204"),
+                "score": 14
+            }
+        ]
+    },
+    {
+        "_id": ObjectId("65f000000000000000000404"),
+        "firstName": "Alimata",
+        "lastName": "Diarra",
+        "birthDate": "2006-03-15",
+        "classId": ObjectId("65f000000000000000000101"),
+        "subjects": [
+            ObjectId("65f000000000000000000201"),
+            ObjectId("65f000000000000000000204")
+        ],
+        "grades": [
+            {
+                "subjectId": ObjectId("65f000000000000000000201"),
+                "score": 16
+            },
+            {
+                "subjectId": ObjectId("65f000000000000000000204"),
+                "score": 14
+            }
+        ]
+    },
+]
